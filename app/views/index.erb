@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Anagram Time!</h1>
+
+  <form action="/anagram" method="post">
+    Choose a word:
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Find anagrams!">
+  </form>
+  
+  <div>
+    <ul>
+      <% @anagrams.each do |word| %>
+        <li><%= word[:word] %></li>
+      <% end %>
+    </ul>
+  <div>
+
+</div>
